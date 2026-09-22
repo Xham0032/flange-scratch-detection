@@ -2,7 +2,7 @@
 
 Code and fixed Washer sample assignments accompanying **A Candidate-Level Multi-Directional Illumination Fusion Method for Flange Surface Scratch Detection**.
 
-This is a local release candidate. It has not yet been published to GitHub. A license has not yet been selected; no open-source license is implied by this draft.
+This repository provides the paper implementation, parameter files, and the fixed Washer 20/30 split. No images or annotation masks are distributed. A software license has not yet been selected.
 
 ## Contents and data boundary
 
