@@ -1,0 +1,94 @@
+{
+  "status": "Parameter inventory; executable defaults are in flange.py. Editing this inventory does not change execution.",
+  "resolution": [
+    2448,
+    2048
+  ],
+  "canny_primary": [
+    80,
+    220
+  ],
+  "canny_supplementary": [
+    60,
+    180
+  ],
+  "canny_aperture": 3,
+  "canny_L2gradient": true,
+  "edge_dilation_ellipse": 3,
+  "directional_contour_min_arc": 8,
+  "directional_max_aspect": 0.75,
+  "candidate_close_ellipse": 10,
+  "feature_min_arc": 30,
+  "contrast_ring_rectangle": 11,
+  "main": {
+    "length_min": 80,
+    "solidity": [
+      0.6,
+      0.84
+    ],
+    "thickness_max": 5,
+    "support_min": 2,
+    "bright_max": -20,
+    "opposite_dark_min": 10,
+    "wide_thickness_min": 3.5,
+    "wide_dark_min": 12,
+    "wide_aspect_max": 0.25
+  },
+  "long_thin": {
+    "length_min": 300,
+    "solidity": [
+      0.2,
+      0.84
+    ],
+    "thickness_max": 4,
+    "aspect_max": 0.2,
+    "support_min": 2,
+    "absolute_contrast_min": 10
+  },
+  "thin_scratch": {
+    "length_min": 100,
+    "box_long_min": 60,
+    "solidity": [
+      0.6,
+      0.84
+    ],
+    "thickness_max": 3.5,
+    "aspect_max": 0.2,
+    "contrast_min_max": -8,
+    "contrast_max_min": 10
+  },
+  "dedup": {
+    "order": [
+      "main",
+      "long_thin",
+      "thin_scratch"
+    ],
+    "absolute_centroid_to_boundary_distance_max": 15
+  },
+  "refinement": {
+    "length": 21,
+    "width": 3,
+    "max_added_fraction": 0.2,
+    "other_candidate_neighborhood": 3
+  },
+  "roi": {
+    "outer_scale": 0.25,
+    "gaussian": 3,
+    "threshold": "Otsu",
+    "outer_close_ellipse": 11,
+    "outer_min_area": 300,
+    "hole_scale": 0.5,
+    "blobColor": 0,
+    "minThreshold": 10,
+    "maxThreshold": 200,
+    "thresholdStep": 10,
+    "minArea": 1000,
+    "maxArea": 80000,
+    "minInertiaRatio": 0.5,
+    "minCircularity": 0.4,
+    "filterByConvexity": false,
+    "hole_center_ratio": 0.95,
+    "hole_radius_pad": 4,
+    "safe_erode_ellipse": 45
+  }
+}

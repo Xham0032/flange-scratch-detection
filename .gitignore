@@ -1,0 +1,15 @@
+# Deny by default: explicitly allow reviewed code and metadata only.
+*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/flange.py
+!/washer_core.py
+!/evaluate_washer.py
+!/check_release.py
+!/configs/
+!/configs/flange_parameters.json
+!/configs/washer_parameters.json
+!/splits/
+!/splits/washer_20_30.csv
+# Add an approved license explicitly after the author selects it.

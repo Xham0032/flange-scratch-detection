@@ -1,0 +1,18 @@
+{
+  "name": "washer_calibrated",
+  "low": 80,
+  "high": 240,
+  "dilate": 1,
+  "close": 1,
+  "min_arc": 20.476373047941085,
+  "max_aspect": 0.5218395291685864,
+  "erosion": 49,
+  "ring": 21,
+  "length": 400,
+  "solidity_low": 0.17662509461149922,
+  "solidity_high": 0.9495695842036624,
+  "thickness": 10.690075128887745,
+  "support": 4,
+  "contrast_floor": 12,
+  "rescue_scale": 0.25
+}
